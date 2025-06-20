@@ -1,46 +1,61 @@
-//esto es un comentario//
-/* esto es unicodeBidi: 
-comntario de varias lines*/
-//*unction elegirTipos() {
+
 let miArraySel = [];
 let miArray = [];
 let miGusto = [];
 let miArrayFormato = ["Formato"];
 let miCantidad = [];
 let aa = "";
-/*let numbers =[]*/
+let numb = [];
+let miArrayNum = [];
 let i = 1;
 let H = 0;
+
 const numbers = document.querySelectorAll('.checkbox-container1 input[type="number"]');
 const checkboxes = document.querySelectorAll('.checkbox-container1 input[type="checkbox"]');
-console.log(numbers);
-numbers.forEach((number) => {
-    number.addEventListener('change', () => {
-        miArray.push(
-            number.name,
-            number.value
-        );
-        miCantidad.push(number.name,number.value); // Add the value to miCantidad
-        console.log("mi Array mi Cantidad",miCantidad);
-        i++;
+//onsole.log(numbers);
 
-        let longit = miCantidad.length;
-        console.log(longit);
-        for (let h = 0; h < miCantidad.length; h++) {
-            console.log("contador=", h);
+checkboxes.forEach((checkbox) => {
+    console.log(checkbox.name);
+    // Selecciona el input number hermano del checkbox dentro del mismo contenedor
+    const numberInput = checkbox.closest('.checkbox-container1').querySelector('input[type="number"]');
+    if (numberInput) {
+        numberInput.addEventListener('change', () => {
+            console.log(numberInput.value);
+            miArrayNum.push(
+                numberInput.name,
+                numberInput.value
+            );
+            console.log("miArrayNer0o=", miArrayNum);
+            miCantidad.push(numberInput.name, numberInput.value); // Add the value to miCantidad
+            console.log("mi Array mi Cantidad", miCantidad);
+            i++;
+
+            let longit = miCantidad.length;
+            console.log("logitud del array mi cantidad=", longit);
+            for (let h = 0; h < miCantidad.length; h++) {
+                console.log("contador=", h);
+            }
+            miArrayFormato.push(numberInput.name);
+            miGusto.push(numberInput.name);
+            console.log(" mi ArrayFormato", miArrayFormato);
+            console.log(" mi Array Gusto", miGusto);
+            console.log('miArrayFormato:', miArrayFormato);
+        });
+    }
+    checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+            console.log('Valor del checkbox:', checkbox.name);
+            aa = checkbox.name;
+            console.log('aa:', aa);
+            miArray.push(
+                aa
+            );
+            console.log('miArray', miArray);
+            console.log('El checkbox está seleccionado:', checkbox.name);
+        } else {
+            console.log('El checkbox no está seleccionado:', checkbox.name);
         }
-        miArrayFormato.push(number.name);
-        miGusto.push(number.name);
-        console.log(" mi ArrayFormato", miArrayFormato);
-        console.log(" mi Array Gusto", miGusto);
-
-     //   let miArraySel = miArrayGusto
-
-        /*miArrayCantidad.push(number.cantidad$.value)); */
-        // Itera sobre cada checkbox y muestra su valor
-        //checkboxes.forEach((checkbox) => { miArray.push(checkbox.id) });
-        console.log('miArrayFormato:', miArrayFormato);
-        // }
+        // estos son de checkbox de arriba
     });
 });
 
