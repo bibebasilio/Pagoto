@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/encabezado.css">
-    <link rel="stylesheet" href="css/estilos.css">
-     <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/gustos.css">
-    <link rel="stylesheet" href="css/ppagina.css">
-
+    <link rel="stylesheet" href="encabezado.css">
+    <link rel="stylesheet" href="estilos.css">
+     <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="gustos.css">
+    <link rel="stylesheet" href="ppagina.css">
+     
 </head> 
 
 <body>
@@ -19,10 +19,10 @@
        <div class="logo" >     
         <img src="imagenes/bicicleta.jpeg" alt="Logo de la heladería">
        </div>  
-        <nav>
+        <nav aria-label="Enlaces de navegación principal">
             <ul class="nav-links">
                 <li><a href="#formatos">Formatos</a></li>
-                <li><a href="#gustos">Gustos</a></li>
+                <li><a href="#gustos">Sabores</a></li>
                 <li><a href="pedidos.html">Pedidos</a></li>
                 <li><a href="acceso.html">ACCESO</a></li>
              </ul>   
@@ -48,309 +48,317 @@
 <section id="formatos">
         <section class="grid-conteiner checkbox-container">
 
-            <article class="grid-item1 checkbox-container1">
-            <input type="checkbox" id="boutique" name="seleccion" value="value" class="csf">   
-            <label for="boutique">Boutique
+            <div class="grid-item1 checkbox-container1 grupo">
+            <input type="checkbox" id="activar1" name="boutique" value="value" tipo="tp1" class="csf" class="checkbok">   
+            <label for="activar1">Boutique
             <img src="imagenes/gourmet4.jpeg" alt="CD1" class="ppp"> 
            </label>$800   
-            
-            <input type="number" id="cantboutique" name="cantidadmin" min="0"  placeholder="Cantidad" class="aa">                                                                         
-            </article>
+            <input type="number" id="cantidad1" name="boutique" min="0" tipo="tp1" placeholder="Cantidad" class="aa"  class="cantidad">                                                                         
+            <a class="boton1" href="#gustos">ok</a>
+            </div>
         
          
          
-            <article class="grid-item2 checkbox-container1  ">    
-            <input type="checkbox" id="tabletas" name="seleccion" value="value" class="csf">
-            <label for="tabletas">Tableta                                                                         
+            <div class="grid-item2 checkbox-container1 grupo">    
+            <input type="checkbox" id="activar2" name="tableta" value="value" tipo="tp2" class="csf" class="checkbok"> 
+            <label for="activar2">Tableta                                                                         
             <img src="imagenes/carita helado.jpeg" alt="CD2" class="ppp" >
-            </label>$1000
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa"> 
-            </article>  
+            </label>$900
+            <input type="number" id="cantidad2" name="tableta" min="0" tipo="tp2" placeholder="Cantidad" class="aa" v class="cantidad">
+            <a class="boton1" href="#gustos">Ok</a>
+            </div>  
         
-            <article class="grid-item3 checkbox-container1">
-            <input type="checkbox" id="lolita" name="seleccion" value="value" class="csaf">
-            <label for="lolita">Lolita                                                                         
+            <div class="grid-item3 checkbox-container1 grupo">
+            <input type="checkbox" id="activar3" name="lolita" value="value" class="csf" tipo="tp3" class="checkbok">
+            <label for="activar3">Lolita                                                                         
             <img src="imagenes/lolita.jpg" alt="CD3" class="ppp">
             </label>$1000
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa"> 
-            </article>
+            <input type="number" id="cantidad3" name="lolita" min="0" placeholder="Cantidad" class="aa"  class="cantidad">
+            <a class="boton1" href="#gustos">Ok</a>
+             </div>
 
 
                        
-            <article class="grid-item4 checkbox-container1">
-            <input type="checkbox" id="piramide" name="seleccion" value="value" clss="csaf">
-            <label for="piramide">Piramide                                                                          
+            <div class="grid-item4 checkbox-container1 grupo">
+            <input type="checkbox" id="activar4" name="piramide" value="value" tipo="tp4" class="csf" class="checkbok">
+            <label for="activar4">Piramide                                                                          
             <img src="imagenes/cucurucho.jpeg" alt="CD4" class="ppp">    
             </label>$1000
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa">
-            </article>
+            <input type="number" id="cantidad4" name="piramide" min="0" placeholder="Cantidad" class="aa" value="value" class="cantidad">
+            <a class="boton1" href="#gustos">Ok</a>
+            </div>
            
-            <div class="grid-item5 checkbox-container1">
-            <input type="checkbox" id="palito" name="seleccion" value="value" class="c"> 
-            <label for="palito">Palito                                                                              
+            <div class="grid-item5 checkbox-container1 grupo">
+            <input type="checkbox" id="activar5" name="palito" value="value" class="csf" class="checkbok"> 
+            <label for="activar5">Palito                                                                              
             <img src="imagenes/palito banado mitad.jpg" alt="CD5" class="ppp">
             </label>$1500
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa">
+            <input type="number" id="cantidad5" name="palito" min="0" placeholder="Cantidad" class="aa" value="value" class="cantidad">
+            <a class="boton1" href="#gustos">Ok</a>
             </div>  
+                                            
 
-
-            <div class="grid-item6 checkbox-container1">
-            <input type="checkbox" id="mega" name="seleccion" value="value" class="c">
-            <label for="mega">  Mega                                                                        
+            <div class="grid-item6 checkbox-container1 grupo">
+            <input type="checkbox" id="activar6" name="mega" value="value" class="csf" class="checkbok">
+            <label for="activar6">Mega                                                                        
             <img src="imagenes/carita 2 heladoS.jpeg" alt="CD6" class="ppp">
             </label>$1800
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa">
-            </div>
+            <input type="number" id="cantidad6" name="mega" min="0" placeholder="Cantidad" class="aa" class="cantidad">
+            <a class="boton1" href="#gustos">Ok</a>
+        </div>
 
-            <div class="grid-item7 checkbox-container1">
-            <input type="checkbox"  id="rellenos" name="seleccion" value="value" class="c">
-            <label for="rellenos">Rellenos                                                                          
+            <div class="grid-item7 checkbox-container1 grupo">
+            <input type="checkbox"  id="activar7" name="Rellenos" value="value" class="csf" class="checkbok">
+            <label for="activar7">Rellenos                                                                          
             <img src="imagenes/gourmet4.jpeg" alt="CD7" class="ppp">    
             </label>$2000
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa">
-            </div>
+            <input type="number" id="cantidad7" name="Rellenos" min="0" placeholder="Cantidad" class="aa" class="cantidad">
+            <a class="boton1" href="#gustos">Ok</a>
+        </div>
 
 
-            <div class="grid-item8 checkbox-container1">
-            <input type="checkbox" id="drill" name="seleccion" value="value" class="caf">  
-            <label for="drill">Drill                                                                          
+            <div class="grid-item8 checkbox-container1 grupo">
+            <input type="checkbox" id="activar8" name="Drill" value="value" class="csf" class="checkbok">  
+            <label for="activar8">Drill                                                                          
             <img src="imagenes/carita helado.jpeg" alt="CD8" class="ppp">
             </label>$1500
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa">
-            </div>
+            <input type="number" id="cantidad8" name="Drill" min="0" placeholder="Cantidad" class="aa" class="cantidad">
+            <a class="boton1" href="#gustos">Ok</a>
+        </div>
 
             
-            <div class="grid-item9 checkbox-container1">
-            <input type="checkbox" id="vasitos" name="seleccion" value="value" class="cs">
-            <label for="vasitos"> Vasito 1B                                                                  
+            <div class="grid-item9 checkbox-container1 grupo">
+            <input type="checkbox" id="activar9" name="Vasito 1B" value="value" class="csf" class="checkbok">
+            <label for="activar9"> Vasito 1B                                                                  
             <img src="imagenes/lolita.jpg" alt="CD9" class="ppp">
             </labe>$2000 
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa">
-            </div>
+            <input type="number" id="cantidad9" name="Vasito 1B" min="0" placeholder="Cantidad" class="aa" class="cantidad">
+           
+        </div>
 
-            <div class="grid-item10 checkbox-container1">
-            <input type="checkbox" id="vasito base" name="seleccion" value="value" class="cs">
-            <label for="vasito base">Vas/Base                                                                          
+            <div class="grid-item10 checkbox-container1 grupo">
+            <input type="checkbox" id="activar10" name="Vas/Base" value="value" class="csf" class="checkbox">
+            <label for="activar10">Vas/Base                                                                          
             <img src="imagenes/cucurucho.jpeg" alt="CD10" class="ppp">    
             </label>$2500
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa">
-            </div>    
+            <input type="number" id="cantidad10" name="Vas/Base" min="0" placeholder="Cantidad" class="aa" class="cantidad">
+            <a class="boton1" href="#gustos">Ok</a>
+        </div>    
 
 
-            <div class="grid-item11 checkbox-container1">
-            <input type="checkbox" id="cilindro" name="seleccion" value="value" class="csaf">
-            <label for="cilindro">Cilindro                                                                          
+            <div class="grid-item11 checkbox-container1 grupo">
+            <input type="checkbox" id="activar11" name="seleccion" value="value" class="csf" class="checkbok">
+            <label for="activar11">Cilindro                                                                          
             <img src="imagenes/palito banado mitad.jpg" alt="CD11" class="ppp">
             </label>$2000
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa">
-            </div>    
+            <input type="number" id="cantidad11" name="cantidadmin" min="0" placeholder="Cantidad" class="aa" class="cantidad">
+            <a class="boton1" href="#gustos">Ok</a>
+        </div>    
 
 
-            <div class="grid-item12 checkbox-container1">
-            <input type="checkbox" id="sandwich" name="seleccion" value="value" class="cs">                                                                            
-            <label for="sandwich">Sandwich
+            <div class="grid-item12 checkbox-container1 grupo">
+            <input type="checkbox" id="activar12" name="seleccion" value="value" class="csf" class="checkbox">                                                                            
+            <label for="activar12">Sandwich
             <img src="imagenes/carita 2 heladoS.jpeg" alt="CD12" class="ppp">
             </label>$1800
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa">
-            </div>
+            <input type="number" id="cantidad12" name="cantidadmin" min="0" placeholder="Cantidad" class="aa" class="cantidad">
+            <a class="boton1" href="#gustos">Ok</a>
+        </div>
 
-            <div class="grid-item13 checkbox-container1">
-            <input type="checkbox" id="pote" name="seleccion" value="value" class="csf">
-            <label for="pote">Pote                                                                       
+            <div class="grid-item13 checkbox-container1 grupo">
+            <input type="checkbox" id="activar13" name="seleccion" value="value" class="csf" class="checkbok">
+            <label for="activar13">Pote                                                                       
             <img src="imagenes/gourmet4.jpeg" alt="CD13" class="ppp">    
             </label>$3000
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa">
-            </div>
+            <input type="number" id="cantidad13" name="cantidadmin" min="0" placeholder="Cantidad" class="aa" class="cantidad">
+            <a class="boton1" href="#gustos">Ok</a>
+        </div>
 
  
-            <div class="grid-item14 checkbox-container1">
-            <input type="checkbox" id="postre" name="seleccion" value="value" class="cs"> 
-            <label for="postre">Postres                                                                          
+            <div class="grid-item14 checkbox-container1 grupo">
+                <input type="checkbox" id="activar14" name="seleccion" value="value" class="csf" class="checkbok" > 
+                <label for="activar14">Postres                                                                          
             <img src="imagenes/carita helado.jpeg" alt="CD14" class="ppp">
             </label>$4000
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa">
-            </div>
+            <input type="number" id="cantidad14" name="cantidadmin" min="0" placeholder="Cantidad" class="aa" class="cantidad">
+            <a class="boton1" href="#gustos">Ok</a>
+        </div>
 
-            <div class="grid-item15 checkbox-container1">
-            <input type="checkbox" id="especiales" name="seleccion" value="value"  class="cs">
-            <label for="especiales"> Especiales                                                                         
+            <div class="grid-item15 checkbox-container1 grupo">
+            <input type="checkbox" id="activar15" name="seleccion" value="value"  class="csf" class="checkbok" >
+            <label for="activar15"> Especiales                                                                         
             <img src="imagenes/lolita.jpg" alt="CD15" class="ppp">
             </label>$2500
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa">
+            <input type="number" id="cantidad15" name="cantidadmin" min="0" placeholder="Cantidad" class="aa" class="cantidad">
+            <a class="boton1" href="#gustos">Ok</a>
+        </div>
+
+
+            <div class="grid-item16 checkbox-container1 grupo">
+                <input type="checkbox" id="activar16" name="seleccion" value="value" class="csf" class="checkbok">
+                <label for="activar16">Eventos
+                    <img src="imagenes/cucurucho.jpeg" alt="CD16" class="ppp">    
+                </label>Consultar
+                <input type="number" id="cantidad16" name="cantidadmin" min="0" placeholder="Cantidad" class="aa" class="cantidad">
+                <a class="boton1" href="#gustos">Ok</a>
             </div>
+            
+        </section>    
+    </section>
+    
+    
+</section>   
 
-
-            <div class="grid-item16 checkbox-container1">
-            <input type="checkbox" id="eventos" name="seleccion" value="value" class="csaf">
-            <label for="eventos">Eventos
-            <img src="imagenes/cucurucho.jpeg" alt="CD16" class="ppp">    
-            </label>Consultar
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa">
-            </div>
-
-       </section>    
-</section>
- <!---  <section id="fotos"> 
-          <SEcTION CLASS="foto"> 
-          <img src="imagenes/carita helado.jpeg" alt="CD1"class="JOT1">  
-          <img src="imagenes/bombon-corazones-lolita.jpg" alt="CD2" CLAS="JOT2">
-
-
-         </section>   
-   </section>  -->
- <section id="gustos">  
-        
+</section>  
+<section id="gustos">  
+    
         <section class="grid-sabor  casilla ">
         
-            <article class="grid-crema1">
-            <input type="checkbox" id="americana" name="seleccion" value="value" class="crema">   
-            <label for="americana">
+            <article class="grid-crema1 sabor">
+            <input type="checkbox" id="act1" name="Americana"  class="crema">   
+            <label for="act1">
             <img src="imagenes/americana3.jpeg" alt="CD11" class="ppp">
             </label>Americana 
-            <input type="number" id="cantamericana" name="cantame" min="0"  placeholder="Cantidad" class="aa1">  
-            <input type="number" id="cantamericanasl" name="cantamesl" min="0"  placeholder="Sin Lactosa" class="bb1">         
+            <input type="number" id="cant1" name="Americana" min="0"  placeholder="Cantidad" class="aa1">  
+            <input type="number" id="cantsl1" name="Americana SL" min="0"  placeholder="Sin Lactosa" class="bb1">         
             </article>
         
-         
-         
-            <article class="grid-crema2">
-            <input type="checkbox" id="Banana" name="seleccion" value="value" class="crema">   
-            <label for="Banana">
+            <article class="grid-crema2 sabor">
+            <input type="checkbox" id="act2" name="Banana" value="value" class="crema">   
+            <label for="act2">
             <img src="imagenes/banana.jpeg" alt="CD12" class="ppp">
            </label>Banana
-            <input type="number" id="cantbanan" name="cantbana" min="0"  placeholder="Cantidad" class="aa1">
-            <input type="number" id="cantbanansl" name="cantbanasl" min="0"  placeholder="Sin Lactosa" class="bb1"> 
-            </article>
+            <input type="number" id="cant2" name="Banana" min="0"  placeholder="Cantidad" class="aa1">
+            <input type="number" id="cantsl2" name="Banana SL" min="0"  placeholder="Sin Lactosa" class="bb1"> 
+           </article>
 
-          
-            <article class="grid-crema3">
-            <input type="checkbox" id="chocodulce" name="seleccion" value="value" class="crema">
-            <label for="chocodulce">                                                                         
+            <article class="grid-crema3 sabor">
+            <input type="checkbox" id="act3" name="Choc Dulce" value="value" class="crema">
+            <label for="act3">                                                                         
             <img src="imagenes/chocolate.jpeg" alt="CD12" class="ppp">
 
             </label>Choc-Dulce
-            <input type="number" id="cantchocodulce" name="cantchocodulce" min="0" placeholder="Cantidad" class="aa1"> 
-            <input type="number" id="cantbanansl" name="cantbanasl" min="0"  placeholder="Sin Lactosa" class="bb1">
+            <input type="number" id="cant3" name="Choc Dulce" min="0" placeholder="Cantidad" class="aa1"> 
+            <input type="number" id="cantsl3" name="Choc Dulce SL" min="0"  placeholder="Sin Lactosa" class="bb1">
             </article>
 
 
                        
-            <article class="grid-crema4">
-            <input type="checkbox" id="chocosublime" name="seleccion" value="value" clss="crema">
-            <label for="piramide">                                                                          
+            <article class="grid-crema4 sabor">
+            <input type="checkbox" id="chcsblime" name="Choc Sublime" value="value" class="crema" title="Seleccionar Ch-Sublime">
+            <label for="chcsblime">                                                                        
             <img src="imagenes/chocoamargo.jpeg" alt="CD14" class="ppp"> 
             </label>Ch-Sublime
-            <input type="number" id="cantchocosublime" name="cantichocosublime" min="0" placeholder="Cantidad" class="aa1">
-            <input type="number" id="cantchocosublimesl" name="cantichocosublimesl" min="0" placeholder="Sin LActosa" class="bb1">
+            <input type="numero" id="cantchocosblime" name="Choc Sublime" min="0" placeholder="Cantidad" class="aa1">
+            <input type="numero" id="cantchocosublimesl" name="Choc Sublime SL" min="0" placeholder="Sin LActosa" class="bb1">
 
             </article>
           
 
-            <div class="grid-crema5 ">
-            <input type="checkbox" id="ddleche" name="seleccion" value="value" class="c"> 
+            <div class="grid-crema5 sabor">
+            <input type="checkbox" id="ddleche" name="Dulde de Leche" value="value" class="c"> 
             <label for="ddleche">                                                                            
-           <!----<img src="imagenes/dulceleche.jpeg" alt="CD15" class="ppp">-->
-             <img src="imagenes/dulce leche.jpeg" alt="CD12" class="ppp">
+            <img src="imagenes/dulce leche.jpeg" alt="CD12" class="ppp">
             </label>D de Leche
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa1">
+            <input type="number" id="cptabletas" name="Dulce de Leche" min="0" placeholder="Cantidad" class="aa1">
             </div>  
 
 
-            <div class="grid-crema6">
-            <input type="checkbox" id="mega" name="seleccion" value="value" class="c">
+            <div class="grid-crema6 sabor">
+            <input type="checkbox" id="mega" name="Mega" value="value" class="c">
             <label for="mega">                                                                        
             <img src="imagenes/frutillacrema.jpeg" alt="CD16" class="ppp">
             </label>Frutilla
-            <input type="number" id="cantfruti" name="cantida" min="0" placeholder="Cantidad" class="aa1">
-             <input type="number" id="cantfurisl" name="cantidadmin" min="0" placeholder="Sin Lactosa" class="bb1">
+            <input type="number" id="cantfuti" name="Mega" min="0" placeholder="Cantidad" class="aa1">
+             <input type="number" id="cantfurisl" name="Mega SL" min="0" placeholder="Sin Lactosa" class="bb1">
             </div>  
 
             
 
-            <div class="grid-crema7 ">
-            <input type="checkbox"  id="rellenos" name="seleccion" value="value" class="c">
+            <div class="grid-crema7 sabor">
+            <input type="checkbox"  id="rellenos" name="Rellenos" value="value" class="c">
             <label for="rellenos">                                                                    
             <img src="imagenes/menta.jpeg" alt="CD17" class="ppp">   
             </label>Menta
-            <input type="number" id="cantmenta" name="cantidadmin" min="0" placeholder="Cantidad" class="aa1">
-            <input type="number" id="canttmentasl" name="cantidadmin" min="0" placeholder="Sin lactosa" class="bb1">
+            <input type="number" id="cantmnta" name="Rellenos" min="0" placeholder="Cantidad" class="aa1">
+            <input type="number" id="canttmentasl" name="Rellenos SL" min="0" placeholder="Sin lactosa" class="bb1">
             </div>
 
 
-            <div class="grid-crema8 ">
-            <input type="checkbox" id="drill" name="seleccion" value="value" class="caf">  
+            <div class="grid-crema8 sabor">
+            <input type="checkbox" id="drill" name="Drill" value="value" class="caf">  
             <label for="drill">                                                                        
             <img src="imagenes/vainilla1.jpeg" alt="CD18" class="ppp">
            </label>Vainilla
-            <input type="number" id="cantVaini" name="cantidadmin" min="0" placeholder="Cantidad" class="aa1">
-            <input type="number" id="cantvainisl" name="cantidadmin" min="0" placeholder="Sin Lactosa" class="bb1">
+            <input type="number" id="cantVaini" name="Drill" min="0" placeholder="Cantidad" class="aa1">
+            <input type="number" id="cantvainisl" name="Drill SL" min="0" placeholder="Sin Lactosa" class="bb1">
             </div>
 
                 
                                <!--    aca empiezan los de agua-->
-            <article class="grid-crema1">
-            <input type="checkbox" id="anana" name="seleccion" value="value" class="cfurta">   
+            <article class="grid-crema1 sabor">
+            <input type="checkbox" id="anana" name="Anana" value="value" class="cfurta">   
             <label for="anana">
             <img src="imagenes/anana.jpeg" alt="CD21" class="ppp">
             </label>Anana
-            <input type="number" id="cantamericana" name="cantame" min="0"  placeholder="Cantidad" class="aa1">  
+            <input type="number" id="cantamericana" name="Anana" min="0"  placeholder="Cantidad" class="aa1">  
             </article>
         
          
          
-            <article class="grid-crema2">
-            <input type="checkbox" id="durezno" name="seleccion" value="value" class="cfruta">   
+            <article class="grid-crema2 sabor">
+            <input type="checkbox" id="durezno" name="Durazno" value="value" class="cfruta">   
             <label for="durezno">
             <img src="imagenes/durazno.jpeg" alt="CD22" class="ppp">
             </label>Durazno
-            <input type="number" id="cantbanan" name="cantbana" min="0"  placeholder="Cantidad" class="aa1">
+            <input type="number" id="cantbanan" name="Durazno" min="0"  placeholder="Cantidad" class="aa1">
             </article>
 
           
-            <article class="grid-crema3">
-            <input type="checkbox" id="Frambuesa" name="seleccion" value="value" class="cfruta">
+            <article class="grid-crema3 sabor">
+            <input type="checkbox" id="Frambuesa" name="Frambuesa" value="value" class="cfruta" title="Seleccionar Frambuesa" placeholder="Seleccionar Frambuesa">
             <label for="frambuesa ">                                                                    
             <img src="imagenes/frambuesa.jpeg" alt="CD23" class="ppp">
             </label>Frambuesa
-            <input type="number" id="cantchocodulce" name="cantchocodulce" min="0" placeholder="Cantidad" class="aa1"> 
+            <input type="number" id="cantchocodulce" name="Frambuesa" min="0" placeholder="Cantidad" class="aa1"> 
             </article>
 
 
                        
-            <article class="grid-crema4">
-            <input type="checkbox" id="Frutillaf" name="seleccion" value="value" clss="cfruta">
+            <article class="grid-crema4 sabor">
+            <input type="checkbox" id="Frutillaf" name="Frutilla" value="value" clss="cfruta" title="Seleccionar Frutilla" placeholder="Seleccionar Frutilla">
             <label for="frutillaf">                                                                     
             <img src="imagenes/frutilla.jpeg" alt="CD24" class="ppp">
             </label>Frutilla
-            <input type="number" id="cantchocosublime" name="cantichocosublime" min="0" placeholder="Cantidad" class="aa1">
+            <input type="number" id="cantchocosublime" name="Frutilla" min="0" placeholder="Cantidad" class="aa1">
             </article>
 
 
-            <div class="grid-crema5 ">
-            <input type="checkbox" id="limon" name="seleccion" value="value" class="cfrutta"> 
+            <div class="grid-crema5 sabor">
+            <input type="checkbox" id="limon" name="Limon" value="value" class="cfrutta"> 
             <label for="limon">                                                                            
             <img src="imagenes/limon.jpeg" alt="CD25" class="ppp">
             </label>Limom
-            <input type="number" id="canttabletas" name="cantidadmin" min="0" placeholder="Cantidad" class="aa1">
+            <input type="number" id="canttabletas" name="Limon" min="0" placeholder="Cantidad" class="aa1">
             </div>  
 
 
-            <div class="grid-crema6">
-            <input type="checkbox" id="Naranja" name="seleccion" value="value" class="c">
+            <div class="grid-crema6 sabor">
+            <input type="checkbox" id="Naranja" name="Naranja" value="value" class="c">
             <label for="Naranja">
             <img src="imagenes/naranja.jpeg" alt="CD26" class="ppp">
             </label>Naranja
-            <input type="number" id="cantfruti" name="cantida" min="0" placeholder="Cantidad" class="aa1">
+            <input type="number" id="cantfruti" name="Naranja" min="0" placeholder="Cantidad" class="aa1">
             </div>  
 
             
 
-            <div class="grid-crema7 ">
-            <input type="checkbox"  id="mandarina" name="seleccion" value="value" class="c">
+            <div class="grid-crema7 sabor">
+            <input type="checkbox"  id="mandarina" name="Mandarina" value="value" class="c">
             <label for="mandarina">                                                                       
             <img src="imagenes/mandarina.jpeg" alt="CD27" class="ppp">  
             </label>Mandarina
-            <input type="number" id="cantmenta" name="cantidadmin" min="0" placeholder="Cantidad" class="aa1">
+            <input type="number" id="cantmenta" name="Mandarina" min="0" placeholder="Cantidad" class="aa1">
           
             </div>
         
@@ -364,10 +372,7 @@
 
 
 
-   <!--<section id="pagar">-->
-
-        
-           <div  class="sticky  casilla">
+          <div  class="sticky  casilla">
             <h2>Detalle de La compra: </h2>        
             
 
@@ -375,31 +380,20 @@
             <div class="ice confruta">Durazno</div>
             <div class="ice confruta">Frambuesa</div>
             <div class="ice confruta">Frutilla</div>
-            <div class="ice confruta">Limon</div> 
-            <div class="ice confruta">Anana</div>
-            <div class="ice confruta">Durazno</div>
-          <!---  <div class="ice confruta">Frambuesa</div>
-            <div class="ice confruta">Frutilla</div>
-            <div class="ice confruta">Limon</div>  
-             <div class="ice confruta">Anana</div>
-            <div class="ice confruta">Durazno</div>
-            <div class="ice confruta">Frambuesa</div>
-            <div class="ice confruta">Frutilla</div>
-            <div class="ice confruta">Limon</div>   -->
+          
+    
 
             <h2>Importe a Abonar: $</h2> ___________________
-           <img src="imagenes/carrito.jpeg" alt="CD7" class="ppp">
-            </div>
-        
- 
-        </section>
-  
-
-
-    </main>
-
+            <img src="imagenes/carrito.jpeg" alt="CD7" class="ppp">
+        </div>
+    </section>
     
-</body>
+    
+    <script src="nuevo131.js"></script>
+</main>
+
+
+ </body>
 
 
 
@@ -408,27 +402,18 @@
        <div class="logito" >     
         <img src="imagenes/bicicleta.jpeg" alt="Logo de la heladería">
        </div>  
-        <nav>
+         <nav aria-label="Enlaces de navegación del pie de página">
+            
             <ul class="nave-links">
                 <li><a href="#formatos">Formatos</a></li>
-                <li><a href="#gustos">Gustos</a></li>
+                <li><a href="#gustos">Sabores</a></li>
                 <li><a href="pedidos.html">Pedidos</a></li>
                 <li><a href="acceso.html">ACCESO</a></li>
              </ul>   
         </nav>
             <a class="butin" href="asociarse.html"><button>Asociarse</button></a>
+      
 
-         <!----      <a href="https://www.google.com">Inicio</a> 
-        <a href="#">nosotros</a> -->
-       <!----<h2>Redes Sociales</h2>
-            <ul>
-                <li><a href="https://www.facebook.com/tu-pagina" target="_blank">Facebook</a></li>
-                <li><a href="https://www.instagram.com/tu-pagina" target="_blank">Instagram</a></li>
-                <li><a href="https://www.twitter.com/tu-pagina" target="_blank">Twitter</a></li>
-            </ul>-->
-            
-
-           
 </footer>
 
 </html>
